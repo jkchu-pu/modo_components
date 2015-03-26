@@ -1,0 +1,8 @@
+---
+id: modolabs/modo_devtraining_components
+description: Modo Labs Developer Training Examples
+license: commericial
+version: 1.0.0
+require:
+    kurogo/kurogo-core: '2.1.*'
+...

@@ -1,0 +1,20 @@
+---
+common:
+    objdefs:
+        content:
+            default:
+            -   class: KGOHTMLController
+                options:
+                    focal: true
+                    inset: true
+                fields:
+                    heading: An HTML Block
+                    html: 
+                        kgoResolveType: method
+                        kgoResolveValue: getExampleHTML
+                        kgoResolveProcessors:
+                        -   class: KGORegexDataProcessor
+                            options:
+                                search: /hello/i
+                                replace: goodbye
+...

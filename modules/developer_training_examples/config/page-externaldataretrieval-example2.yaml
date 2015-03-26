@@ -1,0 +1,37 @@
+---
+common:
+    objdefs:
+        content:
+            default:
+            -   class: KGOListController
+                source:
+                -   kgoResolveType: method
+                    kgoResolveValue: getFeed
+                fields:
+                    heading: 'Stack Exchange Badges'
+                options:
+                    inset: true
+                    grouped: true
+                regions:
+                -   name: items
+                    contents:
+                    -   class: KGOListItemController
+                        fields:
+                            subtitle:
+                            -   kgoResolveType: inherit
+                                kgoResolveProcessors:
+                                -   class: KGOStringFormatDataProcessor
+                                    options:
+                                        format: '%s, Awarded %s times'
+                                        args:
+                                        -   stackexchange:badgerank
+                                        -   stackexchange:badgeawardcount
+                            url:
+                            -   kgoResolveType: value
+                                kgoResolveValue: stackexchange:badgelink
+                                kgoResolveProcessors:
+                                -   class: KGOURLDataProcessor
+                        source:
+                        -   kgoResolveType: method
+                            kgoResolveValue: getBadgesWithParsemap
+...

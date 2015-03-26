@@ -1,0 +1,39 @@
+---
+title: Stack Exchange Badges Feed
+dataObjects:
+-   StackExchangeBadgeDataObject
+args:
+    dataModel: StackExchangeBadgesDataModel
+    dataRetriever: StackExchangeBadgesDataRetriever
+    dataParser: StackExchangeBadgesDataParser
+config:
+-   class: KGOFormElementControllerText
+    validators:
+    -   class: KGOURLValidator
+        options:
+            required: true
+        fields:
+            label: Badge API URL
+            description: The API URL for a list of badges
+        controller:
+            upload: false
+            config: baseURL
+    -   class: KGOURLValidator
+        options:
+            required: true
+        fields:
+            label: Stack Exchange Site
+            description: The Stack Exchange site name to pull badges for
+        controller:
+            upload: false
+            config: site
+    -   class: KGOURLValidator
+        options:
+            required: false
+        fields:
+            label: Stack Exchange API Key
+            description: The Stack Exchange API key to use for API requests
+        controller:
+            upload: false
+            config: apiKey
+...

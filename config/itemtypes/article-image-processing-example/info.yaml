@@ -1,0 +1,25 @@
+---
+common:
+    title: Article with Cropped List Thumbnails
+    dataObjects:
+    -   KGONewsItem
+    controllerConfigs:
+        KGOUIDetail: info.objdefs.detail
+        KGOUIListItem: info.objdefs.listitem
+    objdefs:
+        listitem:
+            fields:
+                thumbnail:
+                    kgoResolveType: value
+                    kgoResolveValue: kgonews:thumbnail
+                    kgoResolveProcessors:
+                    -   class: KGOImageDataProcessor
+                        options:
+                            crop: 1
+                            maxWidth: 220
+                            maxHeight: 220
+        detail:
+            fields:
+                description: null
+                thumbnail: null
+...

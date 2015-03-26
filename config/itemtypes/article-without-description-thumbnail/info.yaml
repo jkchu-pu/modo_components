@@ -1,0 +1,13 @@
+---
+common:
+    title: Article without description or Thumbnail
+    dataObjects:
+    -   KGONewsItem
+    controllerConfigs:
+        KGOUIDetail: info.objdefs.detail
+    objdefs:
+        detail:
+            fields:
+                description: null
+                thumbnail: null
+...

@@ -1,0 +1,11 @@
+---
+common:
+    objdefs:
+        content:
+            default:
+            -   class: KGOHTMLController
+                fields:
+                    html: 'Hello, <b>World</b>!'
+                options:
+                    focal: true
+...

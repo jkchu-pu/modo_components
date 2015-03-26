@@ -1,0 +1,23 @@
+---
+common:
+    objdefs:
+        content:
+            default:
+            -   class: KGOListController
+                options:
+                    grouped: true
+                    inset: true
+                regions:
+                -   name: items
+                    contents:
+                    -   class: KGOListItemController
+                        fields:
+                            title:
+                                kgoResolveType: localize
+                                kgoResolveValue: developer_training_examples.strings.ex1
+                    -   class: KGOListItemController
+                        fields:
+                            title:
+                                kgoResolveType: localize
+                                kgoResolveValue: developer_training_examples.strings.ex2
+...

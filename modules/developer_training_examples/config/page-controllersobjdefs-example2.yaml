@@ -1,0 +1,27 @@
+---
+common:
+    objdefs:
+        content:
+            default:
+            -   class: KGOListController
+                fields:
+                    heading: 'Fruit'
+                options:
+                    inset: true
+                    grouped: true
+                regions:
+                -   name: items
+                    contents:
+                    -   class: KGOListItemController
+                        fields:
+                            title: Apple
+                    -   class: KGOListItemController
+                        fields:
+                            title: Orange
+                    -   class: KGOListItemController
+                        fields:
+                            title: Bananna
+                    -   class: KGOListItemController
+                        fields:
+                            title: Apricot
+...

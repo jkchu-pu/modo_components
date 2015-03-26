@@ -1,0 +1,45 @@
+---
+common:
+    objdefs:
+        content:
+            default:
+            -   class: KGOListController
+                fields:
+                    heading: 'Submitted Form Data'
+                options:
+                    inset: true
+                    grouped: true
+                regions:
+                -   name: items
+                    contents:
+                    -   class: KGOListItemController
+                        fields:
+                            label: First Name
+                            title:
+                                kgoResolveType: method
+                                kgoResolveValue: getSubmittedFirstName
+                    -   class: KGOListItemController
+                        fields:
+                            label: Last Name
+                            title:
+                                kgoResolveType: method
+                                kgoResolveValue: getSubmittedLastName
+                    -   class: KGOListItemController
+                        fields:
+                            label: Secret
+                            title:
+                                kgoResolveType: method
+                                kgoResolveValue: getSubmittedSecret
+                    -   class: KGOListItemController
+                        fields:
+                            label: Language
+                            title:
+                                kgoResolveType: method
+                                kgoResolveValue: getSubmittedLanguage
+                    -   class: KGOListItemController
+                        fields:
+                            label: Favorite Color
+                            title:
+                                kgoResolveType: method
+                                kgoResolveValue: getSubmittedColor
+...

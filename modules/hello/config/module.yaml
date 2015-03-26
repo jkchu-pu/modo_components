@@ -1,0 +1,8 @@
+---
+common:
+    pages:
+        index:
+            pageTitle: "Hello, World!"
+            objdefs:
+                content: page-index.objdefs.content.default
+...

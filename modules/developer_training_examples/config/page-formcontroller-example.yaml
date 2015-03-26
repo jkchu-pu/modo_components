@@ -1,0 +1,72 @@
+---
+common:
+    fields:
+        heading: Form Controller Test
+        method: POST
+        enctype: multipart/form-data
+    options:
+        urlCommand: formcontroller_example_submission
+    regions:
+    -   name: items
+        contents:
+        -   class: KGOFormElementControllerText
+            fields:
+                name: firstname
+                label: First Name
+                placeholder: First Name
+                value: ""
+            options:
+                required: true
+        -   class: KGOFormElementControllerText
+            fields:
+                name: lastname
+                label: Last Name
+                placeholder: Last Name
+                value: ""
+        -   class: KGOFormElementControllerPassword
+            fields:
+                name: secret
+                label: Secret
+        -   class: KGOFormElementControllerSelect
+            fields:
+                name: language
+                label: Language
+                value: english
+                options:
+                    english: English
+                    spanish: Spanish
+                    french: French
+                    klingon: Klingon
+        -   class: KGOFormElementControllerSelect
+            fields:
+                name: color
+                value: any
+                label: Favorite Color
+                options:
+                    '': Choose
+                    red: Red
+                    orange: Orange
+                    yellow: Yellow
+                    green: Green
+                    blue: Blue
+                    purple: Purple
+            options:
+                required: true
+        -   class: KGOFormElementControllerHidden
+            fields:
+                name: hiddeninput
+                value: A hidden value
+        -   class: KGODataController
+            uiClass: KGOUIFormButtonContainer
+            regions:
+            -   name: items
+                contents:
+                -   class: KGOFormElementControllerSubmit
+                    fields:
+                        name: submit
+                        title: Submit
+                -   class: KGOFormElementControllerReset
+                    fields:
+                        value: Reset
+                        title: Reset
+...

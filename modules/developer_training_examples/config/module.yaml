@@ -1,0 +1,34 @@
+---
+common:
+    pages:
+        index:
+            pageTitle: "Developer Training Examples"
+            objdefs:
+                content: page-index.objdefs.content.default
+        externaldataretrieval_example1:
+            objdefs:
+                content: page-externaldataretrieval-example1.objdefs.content.default
+        externaldataretrieval_example2:
+            objdefs:
+                content: page-externaldataretrieval-example2.objdefs.content.default
+        controllersobjdefs_example1:
+            objdefs:
+                content: page-controllersobjdefs-example1.objdefs.content.default
+        controllersobjdefs_example2:
+            objdefs:
+                content: page-controllersobjdefs-example2.objdefs.content.default
+        controllersobjdefs_example3:
+            objdefs:
+                content: page-controllersobjdefs-example3.objdefs.content.default
+        controllersobjdefs_example4:
+            objdefs:
+                content: page-controllersobjdefs-example4.objdefs.content.default
+        formcontroller_example:
+            pageTitle: "Form Controller Example"
+        formcontroller_example_submission:
+            pageTitle: "Form Controller Example Submission"
+            objdefs:
+                content: page-formcontroller-example-submission.objdefs.content.default
+        modules_example1:
+            pageTitle: "Module Page with Code Demo"
+...

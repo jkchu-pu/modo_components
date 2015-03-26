@@ -1,0 +1,7 @@
+---
+common:
+    developer_training_examples:
+        strings:
+            ex1: Foo
+            ex2: Bar
+...

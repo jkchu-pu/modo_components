@@ -1,0 +1,12 @@
+---
+common:
+    objdefs:
+        content:
+            default:
+            -   class: KGOHTMLController
+                fields:
+                    heading: An HTML Block
+                    html: The <b>contents</b> of the HTML block.
+                options:
+                    focal: true
+...

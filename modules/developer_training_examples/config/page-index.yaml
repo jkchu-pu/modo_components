@@ -1,0 +1,82 @@
+---
+common:
+    objdefs:
+        content:
+            default:
+            -   class: KGOListController
+                fields:
+                    heading: 'External Data Retrieval'
+                options:
+                    inset: true
+                    grouped: true
+                regions:
+                -   name: items
+                    contents:
+                    -   class: KGOListItemController
+                        fields:
+                            title: 'Ex#1 - Stack Exchange Badges (without parsemap)'
+                        options:
+                            urlCommand: externaldataretrieval_example1
+                    -   class: KGOListItemController
+                        fields:
+                            title: 'Ex#1 - Stack Exchange Badges (with parsemap)'
+                        options:
+                            urlCommand: externaldataretrieval_example2
+            -   class: KGOListController
+                fields:
+                    heading: 'Controllers and Object Definitions'
+                options:
+                    inset: true
+                    grouped: true
+                regions:
+                -   name: items
+                    contents:
+                    -   class: KGOListItemController
+                        fields:
+                            title: 'Ex#1 - Simple Object Definition Example'
+                        options:
+                            urlCommand: controllersobjdefs_example1
+                    -   class: KGOListItemController
+                        fields:
+                            title: 'Ex#2 - List Object Definition Example'
+                        options:
+                            urlCommand: controllersobjdefs_example2
+                    -   class: KGOListItemController
+                        fields:
+                            title: 'Ex#3 - Simple Resolver Example'
+                        options:
+                            urlCommand: controllersobjdefs_example3
+                    -   class: KGOListItemController
+                        fields:
+                            title: 'Ex#4 - Simple Data Processor Example'
+                        options:
+                            urlCommand: controllersobjdefs_example4
+            -   class: KGOListController
+                fields:
+                    heading: 'From Controllers'
+                options:
+                    inset: true
+                    grouped: true
+                regions:
+                -   name: items
+                    contents:
+                    -   class: KGOListItemController
+                        fields:
+                            title: 'Ex#1 - Form Controller Example'
+                        options:
+                            urlCommand: formcontroller_example
+            -   class: KGOListController
+                fields:
+                    heading: 'Modules'
+                options:
+                    inset: true
+                    grouped: true
+                regions:
+                -   name: items
+                    contents:
+                    -   class: KGOListItemController
+                        fields:
+                            title: 'Ex#1 - Module Page with Code'
+                        options:
+                            urlCommand: modules_example1
+...
